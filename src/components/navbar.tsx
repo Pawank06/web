@@ -26,7 +26,7 @@ const Navbar = async() => {
                             <Link href="/about" className='flex items-center gap-2 transition-colors duration-300 hover:text-slate-400'>
                                 About
                             </Link>
-                            <Link href="/blog" className='flex items-center gap-2 transition-colors duration-300 hover:text-slate-400'>
+                            <Link href="/blogs" className='flex items-center gap-2 transition-colors duration-300 hover:text-slate-400'>
                                 Blogs
                             </Link>
                             <Link href="/projects" className='flex items-center gap-2 transition-colors duration-300 hover:text-slate-400'>
