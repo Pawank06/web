@@ -1,5 +1,6 @@
 import { getBlogName } from "@/lib/request";
 import Link from "next/link";
+import { Separator } from "./ui/separator";
 
 export default  function Footer() {
 
@@ -7,7 +8,9 @@ export default  function Footer() {
   return (
 
       <footer className="e">
-        <div className="max-w-4xl w-full px-5 xl:p-0 my-5 mx-auto border-t py-6">
+        
+        <div className="max-w-4xl w-full px-5 xl:p-0 my-5 mx-auto ">
+        <Separator className="my-10" />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
               
