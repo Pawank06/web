@@ -23,7 +23,7 @@ export default async function Home() {
   
 
   return (
-    <main className="max-w-4xl md:max-w-[800px] px-3 xl:p-0 mx-auto">
+    <main className="max-w-4xl px-5 xl:p-0 mx-auto">
       <div className="flex justify-center items-center mb-20">
         <Link href="/blogs">
             <span className="relative group inline-block w-fit mx-auto overflow-hidden rounded-full p-[1px]">

@@ -14,7 +14,7 @@ const Navbar = async() => {
     return (
         <header className='fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]'>
             <div className='w-full mb-5'>
-                <div className='max-w-4xl md:max-w-[800px] w-full px-3 xl:p-0 my-5 mx-auto flex justify-between items-center'>
+                <div className='max-w-4xl w-full px-5 xl:p-0 my-5 mx-auto flex justify-between items-center'>
                     <div className={cn('text-4xl font-bold', poppins.className)}>
                         <Link href="/">
                             P.

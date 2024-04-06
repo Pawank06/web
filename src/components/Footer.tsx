@@ -7,7 +7,7 @@ export default  function Footer() {
   return (
 
       <footer className="e">
-        <div className="max-w-4xl md:max-w-[800px] w-full px-3 xl:p-0 my-5 mx-auto border-t py-6">
+        <div className="max-w-4xl w-full px-5 xl:p-0 my-5 mx-auto border-t py-6">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
               
