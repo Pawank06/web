@@ -1,17 +1,21 @@
 import Link from "next/link";
 import { Separator } from "./ui/separator";
+import Container from "./Container";
 
 export default  function Footer() {
 
 
   return (
 
-      <footer className="e">
+      <footer className="mt-12 py-[5.6rem]">
         
-        <div className="max-w-[120rem] mx-auto px-7">
+        <Container className="px-0">
         <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-400/10 dark:bg-blue-300/0  blur-3xl filter" />
+       <div className="px-7">
         <Separator className="my-10" />
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
+       </div>
+        
+          <div className="grid px-7 grid-cols-1 gap-10 lg:grid-cols-3">
             <div>
               
 
@@ -154,23 +158,7 @@ export default  function Footer() {
                 </ul>
               </div>
 
-              <div>
-                <p className="font-medium text-gray-500">Helpful Links</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Contact </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> FAQs </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Live Chat </Link>
-                  </li>
-                </ul>
-              </div>
+              
 
               <div>
                 <p className="font-medium text-gray-500">Elsewhere</p>
@@ -196,8 +184,8 @@ export default  function Footer() {
             </div>
           </div>
 
-          <p className="text-xs text-gray-500">&copy; 2024. Pawan</p>
-        </div>
+          <p className="text-xs mt-10 px-7 text-gray-500">&copy; 2024. Pawan</p>
+        </Container>
       </footer>
 
   );

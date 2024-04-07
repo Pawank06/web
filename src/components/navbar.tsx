@@ -6,19 +6,21 @@ import { ModeToggle } from './theme-toggler'
 import { getBlogName } from '@/lib/request'
 import { cn } from '@/lib/utils'
 import { poppins } from '@/lib/font'
+import Container from './Container'
+
 
 const GITHUB_URL = ""
 const Navbar = async () => {
     const title = await getBlogName()
 
     return (
-        <header className='fixed top-0 left-0 z-10 w-full border-b border-transparent-white backdrop-blur-[12px]'>
+        <header className='fixed top-0 z-10 w-full border-b  backdrop-blur-[12px]'>
 
-            <div className='mb-5 max-w-[120rem] mx-auto px-7 my-5 '>
+            <Container className='flex h-[4.8rem] justify-between '>
 
-                <div className='flex justify-between items-center'>
+                
 
-                    <div className={cn('text-4xl font-bold', poppins.className)}>
+                    <div className={cn('text-4xl flex items-center font-bold', poppins.className)}>
                         <Link href="/">
                             P.
                         </Link>
@@ -44,9 +46,9 @@ const Navbar = async () => {
 
                     </div>
 
-                </div>
+                
 
-            </div>
+            </Container>
 
         </header>
     )

@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import Post from "@/components/post";
 import { getPostBySlug } from "@/lib/request";
 import {
@@ -31,13 +32,19 @@ export default async function BlogPostPage({
 
   return (
 
-     <div className="max-w-[120rem] dark:bg-[#161618] rounded-md border px-7 md:mx-auto">
+
+      <Container className="px-0">
+        {/* <div className="dark:bg-[#161618] rounded-md border px-5 mx-5"></div> */}
       <HydrationBoundary state={dehydrate(queryClient)}>
-      <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-400/10 dark:bg-blue-300/0  blur-3xl filter" /> 
+      <div className="glow absolute  -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-400/10 dark:bg-blue-300/0  blur-3xl filter" /> 
+      <div className="px-7">
         <Post slug={params.slug} />
+      </div>
+        
          
       </HydrationBoundary>
-    </div> 
+    </Container> 
+
 
     
   );

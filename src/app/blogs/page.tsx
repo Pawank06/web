@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import Posts from "@/components/posts";
 import { getPosts } from "@/lib/request";
 import { PostMetadata } from "@/lib/type";
@@ -15,7 +16,7 @@ export default async function Home() {
 })
 
   return (
-    <div className="max-w-[120rem] mx-auto px-7">
+    <Container >
       
       <div className=" gap-5 mt-5">
         
@@ -23,6 +24,6 @@ export default async function Home() {
         <Posts/>
       </HydrationBoundary>
       </div>
-    </div>
+    </Container>
   );
 }

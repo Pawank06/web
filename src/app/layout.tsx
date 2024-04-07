@@ -20,20 +20,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1"
+        />
+      </head>
       <body className={inter.className}>
-        
-        <Provider>
-        
-          
-          <Navbar/>
-          <main className="mt-40 mb-20">
-          <div className="dark:bg-page-gradient background-gradient fixed inset-0 -z-50 max-h-screen" />
-            {children}
-          </main>
-          
-          <Footer/>
-        </Provider>
-        
+        <div>
+          <Provider>
+            <Navbar />
+            <main className="dark:bg-page-gradient pt-[10rem]">
+              <div className="dark:bg-page-gradient background-gradient fixed inset-0 -z-50 max-h-screen" />
+              {children}
+            </main>
+            <Footer />
+          </Provider>
+
+        </div>
+
+
       </body>
     </html>
   );

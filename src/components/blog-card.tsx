@@ -11,7 +11,7 @@ export default function BlogCard({ post }: Props) {
   return (
 
       
-      <Card className="flex dark:bg-[#161618] flex-col">
+      <Card className="flex dark:bg-[#161618] flex-col hover:drop-shadow-2xl transition-all ease-in duration-300">
       <CardHeader>
         <Image
           className="h-full rounded-md w-full object-cover"

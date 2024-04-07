@@ -1,10 +1,12 @@
+
+import Container from '@/components/Container'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='max-w-[120rem] mx-auto px-7'>
+    <Container>
       About
-    </div>
+    </Container>
   )
 }
 
