@@ -1,4 +1,3 @@
-import { getBlogName } from "@/lib/request";
 import Link from "next/link";
 import { Separator } from "./ui/separator";
 
@@ -119,33 +118,7 @@ export default  function Footer() {
 
             <div className="grid mt-4 grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
               <div>
-                <p className="font-medium text-gray-500">Services</p>
-
-                <ul className="mt-6 space-y-4 text-sm">
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Company Review </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> HR Consulting </Link>
-                  </li>
-
-                  <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> SEO Optimisation </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <p className="font-medium text-gray-500">Company</p>
+                <p className="font-medium text-gray-500">Me</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -153,11 +126,29 @@ export default  function Footer() {
                   </li>
 
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Meet the Team </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Blogs </Link>
                   </li>
 
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Contact </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-medium text-gray-500">Projects</p>
+
+                <ul className="mt-6 space-y-4 text-sm">
+                  <li>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Ongoing </Link>
+                  </li>
+
+                  <li>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Work </Link>
+                  </li>
+
+                  <li>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Feed </Link>
                   </li>
                 </ul>
               </div>
@@ -181,23 +172,23 @@ export default  function Footer() {
               </div>
 
               <div>
-                <p className="font-medium text-gray-500">Legal</p>
+                <p className="font-medium text-gray-500">Elsewhere</p>
 
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Accessibility </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Twitter </Link>
                   </li>
 
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Returns Policy </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> GitHub </Link>
                   </li>
 
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Refund Policy </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Figma </Link>
                   </li>
 
                   <li>
-                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Hiring Statistics </Link>
+                    <Link href="#" className="text-gray-700 transition hover:opacity-75"> Linkdin </Link>
                   </li>
                 </ul>
               </div>
