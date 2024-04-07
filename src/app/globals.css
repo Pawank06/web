@@ -73,38 +73,38 @@ blockquote {
 }
 
 .blog-content h1 {
-  @apply text-4xl font-bold;
+  @apply text-2xl md:text-3xl font-bold;
 }
 
 
 
 
 .blog-content h2 {
-  @apply text-3xl font-bold;
+  @apply text-xl md:text-2xl font-bold;
 }
 
 .blog-content h3 {
-  @apply text-2xl font-bold;
+  @apply text-lg md:text-xl font-bold;
 }
 
 
 
 .blog-content h4 {
-  @apply text-xl font-bold;
+  @apply text-sm md:text-lg font-bold;
 }
 
 .blog-content a {
-  @apply underline;
+  @apply underline ml-4;
 }
 
 .blog-content ul {
-  @apply list-disc text-sm;
+  @apply list-disc pl-10 sm:text-lg;
 }
 
 .blog-content ol {
-  @apply list-decimal;
+  @apply list-decimal ml-10;
 }
 
 div[data-node-type="callout"] {
-  @apply flex gap-5 bg-green-500 dark:bg-green-900 rounded p-4;
+  @apply flex gap-5 bg-green-500 dark:bg-green-900 italic rounded p-4;
 }

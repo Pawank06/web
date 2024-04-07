@@ -23,16 +23,16 @@ export default function Post({ slug }: Props) {
       <div>
       
       </div>
-      <h1 className="text-4xl text-center leading-relaxed font-bold mt-5">
+      <h1 className=" text-xl md:text-3xl text-center leading-relaxed font-bold mt-5">
         {data?.title}
       </h1>
-      <p className="my-5 text-center text-xl text-gray-400">{data?.subtitle}</p>
-      <div className="my-5 flex items-center justify-center text-lg">
+      <p className="my-5 text-center text-sm md:text-xl text-gray-400">{data?.subtitle}</p>
+      <div className="my-2 flex items-center justify-center text-lg">
         {data?.author.profilePicture && (
           <Image
             src={data?.author.profilePicture}
             alt={data?.author.name}
-            className="rounded-full h-10 w-10 mr-5"
+            className="rounded-full h-10 w-10 mr-3"
             width={40}
             height={40}
           />
@@ -40,7 +40,7 @@ export default function Post({ slug }: Props) {
         {data?.author.name}
       </div>
       <div
-        className="blog-content text-xl leading-loose flex flex-col gap-5 mt-5"
+        className="blog-content  leading-loose flex flex-col gap-5 mt-5"
         dangerouslySetInnerHTML={{ __html: data!.content.html }}
       ></div>
     </div>

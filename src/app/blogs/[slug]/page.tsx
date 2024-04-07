@@ -30,13 +30,13 @@ export default async function BlogPostPage({
   });
 
   return (
-    <main className="w-full ">
-     <div className="max-w-4xl p-4 dark:bg-[#161618] rounded-md border px-5 xl:p-0 mx-auto">
+
+     <div className="max-w-4xl p-4 dark:bg-[#161618] rounded-md border px-5 mx-5 md:mx-auto">
       <HydrationBoundary state={dehydrate(queryClient)}>
         <Post slug={params.slug} />
       </HydrationBoundary>
     </div> 
-    </main>
+
     
   );
 }
