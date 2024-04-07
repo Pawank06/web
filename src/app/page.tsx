@@ -24,7 +24,9 @@ export default async function Home() {
 
   return (
     <main className="max-w-4xl px-5 xl:p-0 mx-auto">
+
       <div className="flex justify-center items-center mb-20">
+      <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-500/10 dark:bg-blue-300/0  blur-3xl filter" /> 
         <Link href="/blogs">
             <span className="relative group inline-block w-fit mx-auto overflow-hidden rounded-full p-[1px]">
               <span
@@ -35,7 +37,7 @@ export default async function Home() {
               />
               <div
                 className={cn(
-                  "flex gap-1 h-full group w-full items-center justify-center rounded-full dark:bg-zinc-900 bg-zinc-100 px-3 py-1 text-md dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
+                  "flex gap-1 h-full group w-full items-center justify-center rounded-full  dark:bg-zinc-900 bg-rose-100 px-3 py-1 text-md dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
                   "hover:backdrop-blur-2xl hover:shadow-lg transition-all duration-200 ease-in-out", poppins.className
                 )}
               >
@@ -68,13 +70,16 @@ export default async function Home() {
        
       </div>
       
+      
       <div className=" mt-20">
+      
         <h1 className={cn("text-5xl font-semibold", poppins.className)}>Blogs</h1>
         <p className="mt-3 px-1 dark:text-white/45 text-slate-500 ">
         These are my featured Blogs 
         </p>
         <Separator className="my-10" />
          <div className="">
+         <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/15 dark:bg-blue-300/0  blur-3xl filter" /> 
 
         <HydrationBoundary state={dehydrate(queryClient)}>
         <Posts/>
@@ -89,6 +94,8 @@ export default async function Home() {
         </p>
         <Separator className="my-14" />
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
+
+        {/* <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/15 blur-3xl filter" /> */}
 
         
       </div>

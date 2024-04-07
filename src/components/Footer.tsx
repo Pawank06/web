@@ -9,6 +9,7 @@ export default  function Footer() {
       <footer className="e">
         
         <div className="max-w-4xl w-full px-5 xl:p-0 my-5 mx-auto ">
+        <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-400/10 dark:bg-blue-300/0  blur-3xl filter" />
         <Separator className="my-10" />
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-3">
             <div>

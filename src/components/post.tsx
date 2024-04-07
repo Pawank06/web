@@ -40,7 +40,7 @@ export default function Post({ slug }: Props) {
         {data?.author.name}
       </div>
       <div
-        className="blog-content  leading-loose flex flex-col gap-5 mt-5"
+        className="blog-content leading-loose flex flex-col gap-5 mt-5"
         dangerouslySetInnerHTML={{ __html: data!.content.html }}
       ></div>
     </div>

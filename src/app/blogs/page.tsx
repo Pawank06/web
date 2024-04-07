@@ -16,7 +16,9 @@ export default async function Home() {
 
   return (
     <div className="max-w-4xl  px-5 xl:p-0 mx-auto">
+      
       <div className=" gap-5 mt-5">
+        
       <HydrationBoundary state={dehydrate(queryClient)}>
         <Posts/>
       </HydrationBoundary>
