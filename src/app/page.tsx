@@ -23,7 +23,7 @@ export default async function Home() {
   
 
   return (
-    <main className="max-w-4xl px-5 xl:p-0 mx-auto">
+    <main className="max-w-[120rem] mx-auto px-7">
 
       <div className="flex justify-center items-center mb-20">
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-500/10 dark:bg-blue-300/0  blur-3xl filter" /> 
