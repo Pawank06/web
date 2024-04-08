@@ -83,18 +83,15 @@ pre {
 }
 
 blockquote {
-  @apply border-l-4 border-gray-200 dark:border-gray-800 pl-4;
+  @apply italic border-l-4 border-gray-200 dark:border-gray-800 pl-4;
 }
 
 .blog-content h1 {
-  @apply text-2xl md:text-3xl font-bold;
+  @apply text-3xl font-bold;
 }
 
-
-
-
 .blog-content h2 {
-  @apply text-xl md:text-2xl font-bold;
+  @apply text-2xl font-bold;
 }
 
 .blog-content h3 {

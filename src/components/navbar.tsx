@@ -39,10 +39,7 @@ const Navbar = async () => {
                         <Link href="/projects" className='flex items-center gap-2 transition-colors duration-300 hover:text-slate-600'>
                             Projects
                         </Link>
-                        <ModeToggle />
-
-
-
+                        <ModeToggle/>
 
                     </div>
 
