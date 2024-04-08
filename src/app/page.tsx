@@ -85,7 +85,7 @@ export default async function Home() {
         </div>
 
         <div className="">
-          <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/15 dark:bg-blue-300/0  blur-3xl filter" />
+          <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/15 dark:bg-blue-500/15  blur-3xl filter" />
           <div className="px-7">
             <HydrationBoundary state={dehydrate(queryClient)}>
               <Posts />
