@@ -28,7 +28,7 @@ export default async function Home() {
 
       <div className="flex justify-center items-center mb-14">
         <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-yellow-500/10 dark:bg-blue-300/0  blur-3xl filter" />
-        <Link href="/blogs">
+        <Link href="https://twitter.com/akatrinetra" target="_blank">
           <span className="relative group inline-block w-fit mx-auto overflow-hidden rounded-full p-[1px]">
             <span
               className={cn(
@@ -38,11 +38,11 @@ export default async function Home() {
             />
             <div
               className={cn(
-                "flex gap-1 h-full group w-full items-center justify-center rounded-full  dark:bg-zinc-900 bg-rose-100 px-3 py-1 text-md dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
+                "flex gap-1 h-full group w-full items-center justify-center rounded-full  dark:bg-zinc-900 bg-rose-100 px-3 md:py-[3px] py-[2px] text-md dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
                 "hover:backdrop-blur-2xl hover:shadow-lg transition-all duration-200 ease-in-out", poppins.className
               )}
             >
-              <Sparkles className="mr-1 h-3 w-3" />
+              <Sparkles className="mr-1 h-4 w-4" />
               <p className=" font-medium">Follow along on Twitter</p>
             </div>
           </span>
@@ -53,15 +53,15 @@ export default async function Home() {
 
         <h1 className={cn("text-7xl dark:text-slate-300 text-gray-800 font-semibold", poppins.className)}>Pawan</h1>
         <p className="dark:text-white/45 px-1 text-gray-600/70 font-medium">Fullstack Developer</p>
-        <h2 className={cn("mt-6 mb-3 px-1 text-xl dark:text-slate-300 text-slate-500", inter.className)}>Welcome to my digital garden where I share what I&apos;m learning about  shipping great products, becoming a better developer and growing a  career in tech.</h2>
+        <h2 className={cn("mt-6 mb-3 px-1 text-xl dark:text-slate-300 text-slate-500", inter.className)}>Welcome to my online space, where I discuss shipping great products, improving as a developer, and advancing in the tech industry.</h2>
 
         <div className="flex gap-4 mt-6">
-          <Link href="twitter">
+          <Link href="https://twitter.com/akatrinetra" target="_blank">
             <Button className="text-lg font-medium" variant="default">
               Twitter
             </Button>
           </Link>
-          <Link href="github">
+          <Link href="https://github.com/Pawank06/web" target="_blank">
             <Button className="text-lg font-medium" variant="outline">
               GitHub
             </Button>
