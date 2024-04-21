@@ -117,5 +117,5 @@ blockquote {
 }
 
 div[data-node-type="callout"] {
-  @apply flex gap-5 bg-green-500 dark:bg-green-900 italic rounded p-4;
+  @apply flex gap-5 backdrop-blur-sm border  border-gray-200 dark:border-gray-800   italic rounded p-4;
 }
