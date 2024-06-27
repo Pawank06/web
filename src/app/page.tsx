@@ -38,11 +38,11 @@ export default async function Home() {
             />
             <div
               className={cn(
-                "flex gap-1 h-full group w-full items-center justify-center rounded-full  dark:bg-zinc-900 bg-rose-100 px-3 md:py-[3px] py-[2px] text-md dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
+                "flex gap-1 h-full group w-full items-center justify-center rounded-full  dark:bg-zinc-900 bg-rose-100 px-2 md:py-[2px] py-[2px] text-sm dark:text-[#CBC5C5] text-slate-700 backdrop-blur-3xl",
                 "hover:backdrop-blur-2xl hover:shadow-lg transition-all duration-200 ease-in-out", poppins.className
               )}
             >
-              <Sparkles className="mr-1 h-4 w-4" />
+              <Sparkles className="mr-1 h-3 w-3" />
               <p className=" font-medium">Follow along on Twitter</p>
             </div>
           </span>
@@ -51,9 +51,9 @@ export default async function Home() {
 
       <div className="hero-container px-7">
 
-        <h1 className={cn("text-7xl dark:text-slate-300 text-gray-800 font-semibold", poppins.className)}>Pawan</h1>
-        <p className="dark:text-white/45 px-1 text-gray-600/70 font-medium">Fullstack Developer</p>
-        <h2 className={cn("mt-6 mb-3 px-1 text-xl dark:text-slate-300 text-slate-500", inter.className)}>Welcome to my online space, where I discuss shipping great products, improving as a developer, and advancing in the tech industry.</h2>
+        <h1 className={cn("text-4xl dark:text-slate-300 text-gray-800 font-semibold", poppins.className)}>Pawan</h1>
+        <p className="dark:text-white/45 py-2 text-sm text-gray-600/70 ">Developer & Designer</p>
+        <h2 className={cn("text-md dark:text-slate-300 text-slate-500", inter.className)}>Welcome to my online space, where I discuss shipping great products, improving as a developer, and advancing in the tech industry.</h2>
 
         <div className="flex gap-4 mt-6">
           <Link href="https://twitter.com/akatrinetra" target="_blank">
@@ -72,16 +72,16 @@ export default async function Home() {
       </div>
 
 
-      <div className="mt-20 ">
+      <div className="">
 
         <div className="px-7">
-          <h1 className={cn("text-5xl font-semibold", poppins.className)}>Blogs</h1>
-          <p className="mt-3 dark:text-white/45 text-slate-500 ">
-            These are my featured Blogs
-          </p>
+          <Separator className="my-10" />
         </div>
         <div className="px-7">
-          <Separator className="my-10" />
+          <h1 className={cn("text-3xl font-semibold", poppins.className)}>Blogs</h1>
+          <p className="mt-3 dark:text-white/45 text-slate-500 text-sm mb-10">
+            These are my featured Blogs
+          </p>
         </div>
 
         <div className="">
@@ -98,15 +98,15 @@ export default async function Home() {
 
       <div className=" mt-20">
         <div className="px-7">
-          <h1 className={cn("text-5xl  font-semibold", poppins.className)}>Projects</h1>
-          <p className="mt-3 px-1 dark:text-white/45 text-slate-500 ">
+          <Separator className="my-10" />
+          <h1 className={cn("text-3xl  font-semibold", poppins.className)}>Projects</h1>
+          <p className="mt-3 text-sm px-1 dark:text-white/45 text-slate-500 ">
             These are my featured project
           </p>
         </div>
         <div className="px-7">
 
 
-          <Separator className="my-14" />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
 

@@ -12,7 +12,7 @@ export default function BlogCard({ post }: Props) {
 
       
       <Card className="flex dark:bg-[#0A0A0A] flex-col hover:drop-shadow-2xl transition-all ease-in duration-300">
-      <CardHeader>
+      {/* <CardHeader>
         <Image
           className="h-full rounded-md w-full object-cover"
           src={post.coverImage.url}
@@ -20,14 +20,14 @@ export default function BlogCard({ post }: Props) {
           height={400}
           alt={post.title}
         />
-      </CardHeader>
+      </CardHeader> */}
       <CardContent>
-        <h2 className="text-xl lg:text-sm font-bold">
+        <h2 className="text-[16px] font-semibold mt-5">
           <Link href={`/blogs/${post.slug}`} className="hover:underline">
             {post.title}
           </Link>
         </h2>
-        <div className="mt-3 lg:text-sm flex gap-3 items-center">
+        {/* <div className="mt-3 lg:text-sm flex gap-3 items-center">
           {post?.author.profilePicture && (
             <Image
               src={post.author.profilePicture}
@@ -38,8 +38,8 @@ export default function BlogCard({ post }: Props) {
             />
           )}{" "}
           {post.author.name}
-        </div>
-        <p className="text-gray-500 line-clamp-3 lg:text-sm mt-3">
+        </div> */}
+        <p className="text-gray-500 line-clamp-3 text-sm mt-3">
           {post.subtitle || post.content.text}
         </p>
       </CardContent>
