@@ -15,7 +15,7 @@ const Posts = () => {
     })
     return (
         <>
-        <div className="grid  gap-6 ">
+        <div className="grid gap-4">
            {data?.pages.map((group) => group.map((post) =>
                 <BlogCard key={post.cursor} post={post.node} />
             )
